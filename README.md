@@ -24,7 +24,6 @@ A fun and responsive web-based **Typing Test Game** that challenges your typing 
 
 ## 📁 File Structure
 
-```bash
 typing-speed-test/
 │
 ├── index.html         # Main HTML file
