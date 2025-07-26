@@ -51,8 +51,8 @@ To run the project locally:
 ```bash
 git clone https://github.com/yourusername/typing-speed-test.git
 cd typing-speed-test
-Then simply open index.html in your browser.
 ```
+Then simply open index.html in your browser.
 
 ## 📌 TODO / Future Improvements
 Add difficulty levels (easy / medium / hard)
