@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    padding: 0 10px;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    background: blue;
+}
+
+
+.wrapper {
+    margin-top: 20px;
+    width: 770px;
+    padding: 35px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.wrapper .content-box {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper .input-field{
+    padding: 13px 20px 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+}
+
+/* Typing text */
+.typing-test p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Bottom section: result + button side-by-side */
+.content-box.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bfbfbf;
+    padding-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Result details on left */
+.content-box .result-details {
+    display: flex;
+    flex: 1; /* Take up available space */
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+/* Each detail item */
+.result-details li {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-align: center;
+}
+
+.result-details li span {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Try Again Button */
+.content button {
+    white-space: nowrap;
+    width: 120px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    background: blue;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    align-self: flex-start; /* Align with the top of the result row */
+}
+
+.content button:active {
+    transform: scale(0.96);
+}
+
+.typing-test p span{
+    position: relative;
+
+}
+
+.typing-test p span.active {
+    color: blue;
+}
+
+
+.typing-test p span.correct{
+    color: green;
+}
+
+.typing-test p span.incorrect{
+    color: red;
+    outline: 1px solid #fff;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
+
+::selection{
+    color: #fff;
+    background-color: orange;
+}
